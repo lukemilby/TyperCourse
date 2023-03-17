@@ -16,8 +16,8 @@ Commands can take arguments and options that are passed to the function when the
 is invoked. Arguments are positional parameters that must be specified when 
 the command is run, while options are named parameters that can be specified 
 with a flag (e.g., --option value). Typer provides a simple and flexible way 
-to define arguments and options using the typer.Argument and typer.Option classes. We'll talk
-more about Arguments and Options later on in later lessons
+to define arguments and options using the `typer.Argument` and `typer.Option` classes. We'll talk
+more about `Arguments` and `Options` later on in later lessons
 
 When the user runs a Typer app, they enter the name of the app followed by 
 the name of the command they want to run, along with any arguments or options. 
