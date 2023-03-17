@@ -1,6 +1,10 @@
 import typer
 
-# create typer app and command
+"""
+create typer app, turn hello_name into a command and call you Typer app
+"""
+
+# turn me into a command
 def hello_name(name: str):
 	print(f"Hello {name}!")
 
