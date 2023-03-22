@@ -4,12 +4,12 @@ app = typer.Typer()
 
 
 """
-create a new command called pew that takes a name and a count for how many times to print pew
-use typer.Argument for count that sets a default and add the help parameter 
+create a new function called pew that takes a name and a count argument for how many times to print pew
+use typer.Argument for count that sets a default and add the help parameter
+
+add that function as a command to your app
+ 
 """
-@app.command()
-def pew(name:str, count:int = typer.Argument(1, help="how many times to pew")):
-    print(f"You {'pew ' * count}{name}")
 
 @app.command()
 def hello(name: str):

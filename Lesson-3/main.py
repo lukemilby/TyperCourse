@@ -4,12 +4,16 @@ app = typer.Typer()
 
 
 """
-create a new command called pew that takes a name and a count for how many times to print pew
-use typer.Argument for count that sets a default and add the help parameter 
+create a function called loud_printer. Printer should take string to print and have a option to print a single word each line
+loud_printer should take an option to yell. yell should always be used.
+
+add the printer to the typer app commands.
+
 """
 @app.command()
-def pew(name:str, count:int = typer.Argument(1, help="how many times to pew")):
-    print(f"You {'pew ' * count}{name}")
+def printer(message: str, yell):
+    for msg in message.split(" "):
+        print(msg)
 
 @app.command()
 def hello(name: str):

@@ -15,26 +15,44 @@ The tutorial is divided into several lessons, each containing a main.py file and
     * Arguments
 * [Lesson 3](/Lesson-3)
     * Options
+
 ### How to Use Git
-Git is a version control system that allows you to track changes to your code and collaborate with others. To get started, you will need to clone the repository for this tutorial:
+Git is a version control system that allows you to track changes to your code 
+and collaborate with others. To get started, you will need to clone the repository
+for this tutorial:
 
 ```bash
 git clone https://github.com/lukemilby/TyperCourse.git
 ```
-Once you have cloned the repository, you can switch to the directory for the first lesson:
+
+Once you have cloned the repository, you can switch to the directory to install
+required dependencies with pip
+
+```bash
+pip install -r requirements.txt
+```
+
+Start with [Lesson 1](/Lesson-1)
 
 ```bash
 cd TyperCourse/Lesson-1
 ```
 
+Once in the lesson you can review the README for the lesson and main.py 
+
 ## How to Test using Pytest
 
-Pytest is a testing framework for Python that makes it easy to write and run tests. To run the tests for each lesson, navigate to the lesson directory and run the following command:
+Pytest is a testing framework for Python that makes it easy to write and run tests.
+To run the tests for each lesson, navigate to the lesson directory and run the 
+following command:
 
 ```bash
 pytest test_lesson.py
 ```
 
-If your implementation passes the test, you will see a message indicating that all tests have passed. Otherwise, pytest will display an error message indicating which test(s) failed and why.
+If your implementation passes the test, you will see a message indicating that all
+tests have passed. Otherwise, pytest will display an error message indicating 
+which test(s) failed and why.
 
-Congratulations on taking your first steps in learning Typer, Git, and pytest! Let's get started with [Lesson 1](/Lesson-1).
+Congratulations on taking your first steps in learning Typer, Git, and pytest! 
+Let's get started with [Lesson 1](/Lesson-1).
