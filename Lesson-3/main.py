@@ -10,10 +10,7 @@ loud_printer should take an option to yell. yell should always be used.
 add the printer to the typer app commands.
 
 """
-@app.command()
-def printer(message: str, yell):
-    for msg in message.split(" "):
-        print(msg)
+
 
 @app.command()
 def hello(name: str):
